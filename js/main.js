@@ -19,3 +19,16 @@ function toggleDarkMode() {
         $darkMode = false
     }
 }
+
+
+function validasi() {
+    var nama = document.getElementById("nama").value;
+    var email = document.getElementById("email").value;
+    var telp = document.getElementById("telp").value;
+
+    if (nama != "" && email != "" && telp != "") {
+        return true;
+    } else {
+        alert('Data yang anda masukan kurang lengkap!')
+    }
+}
